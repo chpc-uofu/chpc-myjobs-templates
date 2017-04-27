@@ -1,0 +1,7 @@
+name: Simple OpenMP Job
+host: ember
+script: omp-hello.sh
+notes: >
+        Hello OpenMP World prints the number of threads and the current thread id.
+        This example uses 1 node with 12 cores, which is suitable for Ember. A similar job on Kingspeak would use 16, 20, 24 or 28 cores; the OMP_NUM_THREADS environment variable would also be set accordingly . A program must be written to take advantage of multithreading for this to work.
+

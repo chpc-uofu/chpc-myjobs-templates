@@ -1,0 +1,5 @@
+name: Simple hybrid MPI and OpenMP Job
+host: ember
+script: omp-mpi-hello.sh
+notes: >
+        This example is a hybrid MPI/OpenMP job. It runs 2 MPI processes per node with 6 threads per process. It is generally the most efficient to map MPI process to CPU socket, thus in dual socket cluster node we use 2 MPI processes.

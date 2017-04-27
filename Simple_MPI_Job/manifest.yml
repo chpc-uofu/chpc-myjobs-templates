@@ -1,0 +1,4 @@
+name: Simple MPI Job
+host: ember
+script: mpi-hello.sh
+notes: Hello MPI World in C

@@ -1,0 +1,6 @@
+name: Ember guest job on owner nodes
+notes: Preemptable job on Ember owner nodes, useful for quick checks or restartable calculations
+script: ember_guest_job.sh
+host: ember
+
+

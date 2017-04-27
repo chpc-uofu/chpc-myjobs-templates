@@ -1,0 +1,6 @@
+name: Lonepeak job
+notes: Uses user's group allocation, supplied in the "Account" section; lonepeak is not allocated so will work without allocation
+script: lonepeak_job.sh
+host: lonepeak
+
+

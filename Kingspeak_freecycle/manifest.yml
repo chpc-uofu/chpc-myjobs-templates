@@ -1,0 +1,6 @@
+name: Kingspeak freecycle job on general nodes
+notes: Preemptable freecycle job on general nodes for those who don't have allocation, user still has to supply research group's account name in the "Account" section
+script: kingspeak_freecycle_job.sh
+host: kingspeak
+
+

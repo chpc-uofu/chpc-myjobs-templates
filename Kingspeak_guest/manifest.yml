@@ -1,0 +1,6 @@
+name: Kingspeak guest job on owner nodes
+notes: Preemptable job on Kingspeak owner nodes, useful for quick checks or restartable calculations
+script: kingspeak_guest_job.sh
+host: kingspeak 
+
+
