@@ -1,0 +1,6 @@
+name: Abaqus job on Kingspeak owner nodes as a guest
+notes: Uses user's group allocation, supplied in the "Account" section; will not work if group does not have an allocation.<br>Abaqus license is currently open only to groups that contribute to its cost. Please, notify CHPC if your group is not a part of Abaqus group and you would like to participate.
+script: abaqus_kingspeak.sh
+host: kingspeak
+
+
