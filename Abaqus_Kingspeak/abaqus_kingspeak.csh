@@ -29,6 +29,12 @@ module load abaqus/2019
 unsetenv SLURM_GTIDS
 # for multi-node job, we have to prepare a mp_host_list entry to the Abaqus environment file
 /uufs/chpc.utah.edu/sys/installdir/abaqus/setup_ab_slurm.csh
-# run Abaqus 
+# run Abaqus using an input file
 abaqus job=$JOBNAME input=$JOBNAME cpus=$SLURM_NTASKS mp_mode=mpi interactive
 
+# run Abaqus using Python script
+# abaqus noGUI=myscript.py
+# notice that compute resources are not possible to define on the command line, 
+# instead, they are defined in the Python script as arguments to mdb.Job(). 
+# Make sure they match what's defined in this SLURM job script, e.g. as
+# mdb.Job(numCpus=os.getenv('SLURM_NTASKS'),multiprocessingMode='MPI')
