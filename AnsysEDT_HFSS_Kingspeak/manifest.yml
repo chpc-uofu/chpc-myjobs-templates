@@ -1,0 +1,6 @@
+name: Ansys EDT HFSS job on Kingspeak owner nodes as a guest
+notes: Uses user's group allocation, supplied in the "Account" section; will not work if group does not have an allocation.
+script: ansysedt_hfss_kingspeak.sh
+host: kingspeak
+
+

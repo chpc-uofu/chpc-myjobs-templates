@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --partition=ember
+#SBATCH --partition=notchpeak
 
 #SBATCH --job-name=test
 #SBATCH --output=res.txt

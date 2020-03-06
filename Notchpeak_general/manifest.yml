@@ -1,6 +1,6 @@
-name: Ember job on general nodes
+name: Notchpeak job on general nodes
 notes: Uses user's group allocation, supplied in the "Account" section; will not work if group does not have an allocation
-script: ember_general_job.sh
-host: ember
+script: notchpeak_general_job.sh
+host: notchpeak
 
 

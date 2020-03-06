@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=starccm+_test
 #SBATCH --time=1:00:00
-#SBATCH --ntasks=24
+#SBATCH --ntasks=32
 #SBATCH --nodes=2
-#SBATCH --partition=ember
+#SBATCH --partition=kingspeak
 
 #### SET NAME OF SIMULATION FILE
 SIM_FILE="/uufs/chpc.utah.edu/sys/installdir/star-ccm+/12.04.010/STAR-CCM+12.04.010/doc/startutorialsdata/electromagnetism/data/FEmagneticFlux_start.sim"

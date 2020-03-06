@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-#SBATCH --partition=ember
+#SBATCH --partition=kingspeak
 
 #SBATCH --job-name=comsol
 #SBATCH --output=comsol-%j.out-%N
 #SBATCH --error=comsol-%j.err-%N
 #
-#SBATCH --ntasks=12
+#SBATCH --ntasks=16
 #SBATCH --nodes=1
 #SBATCH --time=10:00
 

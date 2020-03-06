@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-#SBATCH --partition=ember
+#SBATCH --partition=kingspeak
 
 #SBATCH --job-name=lumerical
 #SBATCH --output=lumerical-%j.out-%N.
 #SBATCH --error=lumerical-%j.err-%N.
 #
-#SBATCH --ntasks=24
+#SBATCH --ntasks=32
 #SBATCH --nodes=2
 #SBATCH --time=10:00
 

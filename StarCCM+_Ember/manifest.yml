@@ -1,8 +1,0 @@
-name: StarCCM+ job on Ember general nodes
-notes: |
-  Note that the University of Utah license is limited to the members and collaborators of the Institute for Clean and Secure Energy. The Utah State University is run by the Department of Mechanical and Aerospace Engineering.
-  This job uses user's group allocation, supplied in the "Account" section; will not work if group does not have an allocation.<br>Lumerical license is currently open to all users but if user belongs to a research group that has not been part of the campus agreement, please, notify CHPC for further steps.
-script: starccm_ember.sh
-host: ember
-
-

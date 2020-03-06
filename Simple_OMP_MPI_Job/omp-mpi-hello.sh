@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# owner nodes on Ember are the least utilized so try them first
-#SBATCH --partition=ember-guest
+#SBATCH --partition=kingspeak-guest
 #SBATCH --account=owner-guest
 #
 #SBATCH --job-name=ompmpitest

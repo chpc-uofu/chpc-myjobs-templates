@@ -5,7 +5,7 @@
 #SBATCH --ntasks=4    # number of MPI tasks, abbreviated by -n
 # additional information for allocated clusters
 #SBATCH --account=owner-guest     # account - abbreviated by -A
-#SBATCH --partition=ember-guest  # partition, abbreviated by -p
+#SBATCH --partition=kingspeak-guest  # partition, abbreviated by -p
 
 set echo
 module load ansysedt/17.0

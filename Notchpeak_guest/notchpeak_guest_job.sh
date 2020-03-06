@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --partition=ember-guest
+#SBATCH --partition=notchpeak-guest
 #SBATCH --account=owner-guest
 
 #SBATCH --job-name=test

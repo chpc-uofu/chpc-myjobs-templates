@@ -1,6 +1,6 @@
-name: Ember freecycle job on general nodes
+name: Notchpeak freecycle job on general nodes
 notes: Preemptable freecycle job on general nodes for those who don't have allocation, user still has to supply research group's account name in the "Account" section
-script: ember_freecycle_job.sh
-host: ember
+script: notchpeak_freecycle_job.sh
+host: notchpeak
 
 

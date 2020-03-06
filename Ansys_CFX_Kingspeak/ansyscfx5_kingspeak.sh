@@ -2,10 +2,10 @@
 #SBATCH --time=1:00:00 # walltime, abbreviated by -t
 #SBATCH --nodes=2      # number of cluster nodes, abbreviated by -N
 #SBATCH -o slurm-%j.out-%N # name of the stdout, using the job number (%j) and the first node (%N)
-#SBATCH --ntasks=24    # number of MPI tasks, abbreviated by -n
+#SBATCH --ntasks=32    # number of MPI tasks, abbreviated by -n
 # additional information for allocated clusters
 #SBATCH --account=owner-guest     # account - abbreviated by -A
-#SBATCH --partition=ember-guest  # partition, abbreviated by -p
+#SBATCH --partition=kingspeak-guest  # partition, abbreviated by -p
 
 module load ansys/18.1
 

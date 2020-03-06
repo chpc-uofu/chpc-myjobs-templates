@@ -1,0 +1,6 @@
+name: Notchpeak guest job on owner nodes
+notes: Preemptable job on Notchpeak owner nodes, useful for quick checks or restartable calculations
+script: notchpeak_guest_job.sh
+host: notchpeak
+
+

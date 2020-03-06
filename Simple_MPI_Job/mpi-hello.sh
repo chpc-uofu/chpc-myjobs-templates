@@ -1,13 +1,12 @@
 #!/bin/bash
 #
-# owner nodes on Ember are the least utilized so try them first
-#SBATCH --partition=ember-guest
+#SBATCH --partition=kingspeak-guest
 #SBATCH --account=owner-guest
 #
 #SBATCH --job-name=mpitest
 #SBATCH --output=mpi.txt
 #
-#SBATCH --ntasks=24
+#SBATCH --ntasks=32
 #SBATCH --nodes=2
 #SBATCH --time=10:00
 
