@@ -16,5 +16,5 @@ module load gcc mpich
 
 mpicc -O2 mpi-hello.c -o mpi-hello
 
-mpirun -np $SLURM_NTASKS ./mpi-hello
+mpirun -np $SLURM_NTASKS ./mpi-hello > my_results
 

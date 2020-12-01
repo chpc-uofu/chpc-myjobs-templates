@@ -26,6 +26,6 @@ export OMP_NUM_THREADS=$THREADS
 # generally we get better performance if we pin MPI tasks to sockets and OMP threads to cores
 # this example uses MPICH's MPI task pinning and Intel's OpenMP thread pinning
 # for a more general approach, see https://aciref.org/how-to-gain-hybrid-mpi-openmp-code-performance-without-changing-a-line-of-code-a-k-a-dealing-with-task-affinity/
-mpirun -bind-to socket -map-by socket -genv OMP_NUM_THREADS $OMP_NUM_THREADS -genv KMP_AFFINITY "granularity=fine,compact,1,0" -np $SLURM_NTASKS ./omp_mpi_hello >& ompmpi.txt
+mpirun -bind-to socket -map-by socket -genv OMP_NUM_THREADS $OMP_NUM_THREADS -genv KMP_AFFINITY "granularity=fine,compact,1,0" -np $SLURM_NTASKS ./omp_mpi_hello >& myresults
 
 rm omp_mpi_hello
