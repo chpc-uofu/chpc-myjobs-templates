@@ -1,0 +1,7 @@
+name: MATLAB job on Kingspeak general nodes
+notes: |
+  Note this script uses a single node, starting $SLURM_CPUS_ON_NODE parallel workers. The SLURM_CPUS_ON_NODE environment variable lists the number of CPUs on the node.
+script: matlab_kingspeak.sh
+host: kingspeak
+
+
