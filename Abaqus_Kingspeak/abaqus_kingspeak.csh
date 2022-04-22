@@ -23,10 +23,14 @@ cp $JOBNAME.inp $SCRDIR
 cd $SCRDIR
 
 # load the abaqus module
-module load abaqus/2019
+module load abaqus/2022
 
 # unset a SLURM environment variable that breaks the parallel run
-unsetenv SLURM_GTIDS
+unsetenv SLURM_GTIDSa
+# abaqus/2022 needs a specific MPI setting
+# for details: https://community.intel.com/t5/Intel-oneAPI-HPC-Toolkit/bug-mpiexec-segmentation-fault/m-p/1183364
+setenv I_MPI_HYDRA_TOPOLIB ipl
+
 # for multi-node job, we have to prepare a mp_host_list entry to the Abaqus environment file
 /uufs/chpc.utah.edu/sys/installdir/abaqus/setup_ab_slurm.csh
 # run Abaqus using an input file
