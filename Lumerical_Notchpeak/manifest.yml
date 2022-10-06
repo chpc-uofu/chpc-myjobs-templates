@@ -1,0 +1,6 @@
+name: Lumerical job on Notchpeak notchpeak-shared-short partition
+notes: notchpeak-shared-short is designed for interactive and short test jobs. Use other accounts/partitions, as shown by the "myallocation" command for longer and larger jobs.
+script: lumerical_notchpeak.sh
+host: notchpeak
+
+

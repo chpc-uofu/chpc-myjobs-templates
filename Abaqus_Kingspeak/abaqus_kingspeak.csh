@@ -26,7 +26,7 @@ cd $SCRDIR
 module load abaqus/2022
 
 # unset a SLURM environment variable that breaks the parallel run
-unsetenv SLURM_GTIDSa
+unsetenv SLURM_GTIDS
 # abaqus/2022 needs a specific MPI setting
 # for details: https://community.intel.com/t5/Intel-oneAPI-HPC-Toolkit/bug-mpiexec-segmentation-fault/m-p/1183364
 setenv I_MPI_HYDRA_TOPOLIB ipl

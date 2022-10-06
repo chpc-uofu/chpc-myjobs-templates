@@ -1,12 +1,13 @@
 #!/bin/bash
 #
-#SBATCH --partition=kingspeak
+#SBATCH --partition=notchpeak-shared-short
+#SBATCH --account=notchpeak-shared-short
 
 #SBATCH --job-name=lumerical
-#SBATCH --output=lumerical-%j.out-%N.
-#SBATCH --error=lumerical-%j.err-%N.
+#SBATCH --output=lumerical-%j.out-%N
+#SBATCH --error=lumerical-%j.err-%N
 #
-#SBATCH --ntasks=32
+#SBATCH --ntasks=16
 #SBATCH --nodes=2
 #SBATCH --time=10:00
 
