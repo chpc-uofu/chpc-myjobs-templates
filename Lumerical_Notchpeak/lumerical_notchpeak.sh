@@ -16,7 +16,7 @@ module load lumerical/2022R1.2
 
 cp /uufs/chpc.utah.edu/sys/installdir/lumerical/fdtd/8.16.1022/examples/nanowire.fsp .
 
-mpirun -n $SLURM_NTASKS fdtd-engine-ompi-lcl nanowire.fsp
+mpirun -np $SLURM_NTASKS fdtd-engine-ompi-lcl nanowire.fsp
 
 
 
