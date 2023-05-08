@@ -1,6 +1,6 @@
 name: StarCCM+ job on Kingspeak general nodes
 notes: |
-  Note that the University of Utah license is limited to the members and collaborators of the Institute for Clean and Secure Energy. The Utah State University is run by the Department of Mechanical and Aerospace Engineering.
+  This license is limited to the members and collaborators of the Department of Mechanical and Aerospace Engineering at the Utah State University.
   This job uses user's group allocation, supplied in the "Account" section; will not work if group does not have an allocation.
 script: starccm_kingspeak.sh
 host: kingspeak

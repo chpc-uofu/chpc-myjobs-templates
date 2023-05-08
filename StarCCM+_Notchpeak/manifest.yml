@@ -1,0 +1,8 @@
+name: StarCCM+ job on Notchpeak's notchpeak-shared-short partition 
+notes: |
+  Note that this license is limited to the members and collaborators of the Department of Mechanical and Aerospace Engineering at the Utah State University.
+  The "notchpeak-shared-short" account/partition is used for testing purposes only, USU MAE Department members should use the "usumae-np" account and partition.
+script: starccm_notchpeak.sh
+host: notchpeak
+
+

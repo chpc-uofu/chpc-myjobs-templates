@@ -1,9 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=starccm+_test
 #SBATCH --time=1:00:00
-#SBATCH --ntasks=32
+#SBATCH --ntasks=16
 #SBATCH --nodes=2
-#SBATCH --partition=kingspeak
+#SBATCH --partition=notchpeak-shared-short
+#SBATCH --account=notchpeak-shared-short
 
 #### SET NAME OF SIMULATION FILE
 SIM_FILE="/uufs/chpc.utah.edu/sys/installdir/star-ccm+/12.04.010/STAR-CCM+12.04.010/doc/startutorialsdata/foundationTutorials/data/foundationTutorial_1.sim"
