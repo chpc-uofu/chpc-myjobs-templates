@@ -37,7 +37,7 @@ setenv I_MPI_HYDRA_TOPOLIB ipl
 abaqus job=$JOBNAME input=$JOBNAME cpus=$SLURM_NTASKS mp_mode=mpi interactive
 
 # run Abaqus using Python script
-# abaqus noGUI=myscript.py
+# abaqus cae noGUI=myscript.py
 # notice that compute resources are not possible to define on the command line, 
 # instead, they are defined in the Python script as arguments to mdb.Job(). 
 # Make sure they match what's defined in this SLURM job script, e.g. as
