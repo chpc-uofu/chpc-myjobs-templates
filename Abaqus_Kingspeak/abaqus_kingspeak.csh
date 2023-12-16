@@ -30,6 +30,9 @@ unsetenv SLURM_GTIDS
 # abaqus/2022 needs a specific MPI setting
 # for details: https://community.intel.com/t5/Intel-oneAPI-HPC-Toolkit/bug-mpiexec-segmentation-fault/m-p/1183364
 setenv I_MPI_HYDRA_TOPOLIB ipl
+# as of SLURM 23.11.1, need to set this to run multi-node
+setenv I_MPI_HYDRA_BOOTSTRAP slurm
+
 
 # for multi-node job, we have to prepare a mp_host_list entry to the Abaqus environment file
 /uufs/chpc.utah.edu/sys/installdir/abaqus/setup_ab_slurm.csh
