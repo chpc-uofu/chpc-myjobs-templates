@@ -8,12 +8,12 @@
 #SBATCH --partition=kingspeak-guest  # partition, abbreviated by -p
 
 set echo
-module load ansysedt/17.0
+module load ansysedt/25.2
 
 # specify work directory and input file names
 export WORKDIR=`pwd`
 export INPUTNAME="tune_coax_fed_patch.aedt"
-export INPUTDIR="$ANSYSEDT_ROOT/Linux64/Examples/HFSS/Antennas"
+export INPUTDIR="$ANSYSEDT_ROOT/AnsysEM/Examples/HFSS/Antennas"
 
 # cd to the work directory
 cp $INPUTDIR/$INPUTNAME $WORKDIR
@@ -30,19 +30,6 @@ THREADS=$((PPN))
 
 # figure out what nodes we run on
 srun hostname | sort -u > nodefile
-
-# distributed parallel run setup
-# can't start ansoft RSM in its default location since it can't write to the log file owned by hpcapps, despite specifying the logfile option
-#/uufs/chpc.utah.edu/sys/installdir/hfss/rsm/Linux/ansoftrsmservice start -logfile ~/ansoftrsmservice.log
-# instead copy the directory
-cp -r $ANSYSEDT_ROOT/../rsm/Linux64 .
-# and loop over all nodes in the job to start the service
-for NODE in `cat nodefile`; do
-  # start the RSM service
-  ssh $NODE $WORKDIR/Linux64/ansoftrsmservice start
-  # register engines with RSM (otherwise it'll complain that it can't find it)
-  ssh $NODE $ANSYSEDT_ROOT/Linux64/RegisterEnginesWithRSM.pl add
-done
 
 # create list of hosts:tasks:cores
 export ABQHOSTS=""
@@ -70,9 +57,3 @@ echo \$end \'Config\' >> ${OptFile}
 
 ansysedt -ng -batchsolve -distributed -machinelist list="${ABQHOSTS}" -batchoptions $OptFile $INPUTNAME 
 
-# stop the RSM service when done
-for NODE in `cat nodefile`; do
-  ssh $NODE $WORKDIR/Linux64/ansoftrsmservice stop
-done
-# remove directory with the RSM files
-rm -rf $WORKDIR/Linux64

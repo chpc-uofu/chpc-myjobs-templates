@@ -6,6 +6,8 @@
 #SBATCH --partition=notchpeak-shared-short
 #SBATCH --account=notchpeak-shared-short
 
+# NOTE - CHPC currently does not have StarCCM+ license, this is provided only for reference.
+
 #### SET NAME OF SIMULATION FILE
 SIM_FILE="/uufs/chpc.utah.edu/sys/installdir/star-ccm+/12.04.010/STAR-CCM+12.04.010/doc/startutorialsdata/foundationTutorials/data/foundationTutorial_1.sim"
 

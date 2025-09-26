@@ -12,7 +12,7 @@
 #SBATCH --time=10:00
 
 cd $SLURM_SUBMIT_DIR
-module load lumerical/2022R1.2
+module load lumerical/2024R1
 
 cp /uufs/chpc.utah.edu/sys/installdir/lumerical/fdtd/8.16.1022/examples/nanowire.fsp .
 

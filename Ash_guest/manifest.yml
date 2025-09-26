@@ -1,6 +1,0 @@
-name: Ash guest job on owner nodes
-notes: Preemptable job on Ash owner nodes, useful for quick checks or restartable calculations
-script: ash_guest_job.sh
-host: ash
-
-

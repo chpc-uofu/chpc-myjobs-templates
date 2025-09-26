@@ -7,23 +7,23 @@
 #SBATCH --account=owner-guest     # account - abbreviated by -A
 #SBATCH --partition=kingspeak-guest  # partition, abbreviated by -p
 
+# load the abaqus module
+module load abaqus/2023
+
 # define the input file name (in this case it will be t5-std.inp). Change this to your own input file name
-setenv JOBNAME t5-std
+setenv JOBNAME c2
 # fetch an example job, comment this line out if you use your own input file
 abaqus fetch job=$JOBNAME
 
 # --- no need to change anything below this ---
 # create a scratch directory to run this job in
-setenv SCRDIR /scratch/general/lustre/$USER/abaqus/$SLURM_JOBID
+setenv SCRDIR /scratch/general/vast/$USER/abaqus/$SLURM_JOBID
 echo Running in $SCRDIR
 mkdir -p $SCRDIR
 
 # copy the input file to the scratch directory and change to it
 cp $JOBNAME.inp $SCRDIR
 cd $SCRDIR
-
-# load the abaqus module
-module load abaqus/2022
 
 # unset a SLURM environment variable that breaks the parallel run
 unsetenv SLURM_GTIDS

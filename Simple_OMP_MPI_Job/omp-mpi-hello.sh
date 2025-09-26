@@ -8,11 +8,12 @@
 #
 #SBATCH --ntasks=4
 #SBATCH --nodes=2
+#SBATCH --cpus-per-task=2
 #SBATCH --time=10:00
 
 cd $SLURM_SUBMIT_DIR
 
-module load intel mpich
+module load intel-oneapi-compilers/2021.4.0 openmpi/4.1.6
 
 mpicc -qopenmp -O2 omp_mpi_hello.c -o omp_mpi_hello
 
@@ -24,8 +25,8 @@ THREADS=$((PPN/TPN))
 export OMP_NUM_THREADS=$THREADS
 
 # generally we get better performance if we pin MPI tasks to sockets and OMP threads to cores
-# this example uses MPICH's MPI task pinning and Intel's OpenMP thread pinning
-# for a more general approach, see https://aciref.org/how-to-gain-hybrid-mpi-openmp-code-performance-without-changing-a-line-of-code-a-k-a-dealing-with-task-affinity/
-mpirun -bind-to socket -map-by socket -genv OMP_NUM_THREADS $OMP_NUM_THREADS -genv KMP_AFFINITY "granularity=fine,compact,1,0" -np $SLURM_NTASKS ./omp_mpi_hello >& myresults
+# this example uses OpenMPI's MPI task pinning and Intel's OpenMP thread pinning
+# for a more general approach, see https://www.chpc.utah.edu/documentation/software/mpilibraries.php#d
+mpirun -bind-to socket -map-by socket -x OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK -x KMP_AFFINITY="granularity=fine,compact,1,0" -np $SLURM_NTASKS ./omp_mpi_hello >& myresults
 
 rm omp_mpi_hello

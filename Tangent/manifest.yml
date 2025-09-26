@@ -1,6 +1,0 @@
-name: Tangent job
-notes: Uses user's group allocation, supplied in the "Account" section; tangent is not allocated so will work without allocation
-script: tangent_job.sh
-host: tangent
-
-

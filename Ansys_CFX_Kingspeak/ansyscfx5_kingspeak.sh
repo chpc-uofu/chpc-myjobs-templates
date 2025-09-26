@@ -7,14 +7,14 @@
 #SBATCH --account=owner-guest     # account - abbreviated by -A
 #SBATCH --partition=kingspeak-guest  # partition, abbreviated by -p
 
-module load ansys/18.1
+module load ansys/2025R2
 
 # specify work directory and input file names
 export WORKDIR=`pwd`
 # name of the input file
 export INPUTNAME=Benchmark.def
 # our input source is one of the CFX examples
-export INPUTDIR=$ANSYS181_ROOT/CFX/examples
+export INPUTDIR=$ANSYS252_ROOT/CFX/examples
 
 # cd to the work directory
 cp $INPUTDIR/$INPUTNAME $WORKDIR
@@ -26,4 +26,4 @@ NODELIST=`cat $SLURM_NODEFILE`
 NODELIST=`echo $NODELIST | sed -e 's/ /,/g'`
 echo "Ansys nodelist="$NODELIST
 
-cfx5solve -def $INPUTNAME -parallel -par-dist $NODELIST -start-method "IBM MPI Distributed Parallel"
+cfx5solve -def $INPUTNAME -parallel -par-dist $NODELIST -start-method "Open MPI Distributed Parallel"
