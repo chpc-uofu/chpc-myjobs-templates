@@ -8,7 +8,7 @@
 #SBATCH --partition=kingspeak-guest  # partition, abbreviated by -p
 
 # load the abaqus module
-module load abaqus/2023
+module load abaqus/2025
 
 # define the input file name (in this case it will be t5-std.inp). Change this to your own input file name
 setenv JOBNAME c2
