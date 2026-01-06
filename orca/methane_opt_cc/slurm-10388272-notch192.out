@@ -1,0 +1,12 @@
+Electronic structure calculation
+  Started at  : 01/05/2026 @ 14:41:36
+  Job. Id     : 10388272
+  Cluster     : notchpeak
+  #Nodes      : 1
+  Nodes       : notch192
+  Executable  : /uufs/chpc.utah.edu/sys/installdir/r8/orca/6.0.1/orca
+  Working dir.: /uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/orca/methane_opt_cc
+  Input file  : methane.inp
+  #ORCA procs : 64
+
+  Ended at    : 01/05/2026 @ 23:52:35

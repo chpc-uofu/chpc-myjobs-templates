@@ -1,0 +1,61 @@
+# CH4: CCSD(T) geometry optimization + freq. calc. at the final geom.
+#      Basis: aug-cc-pVTZ
+#      CCSD : Frozen core
+
+# Set the base name for the output file
+%base "CH4_CCSD"
+
+%pal
+    nprocs 8     
+end
+
+# Keyword line
+! CCSD(T) Opt NumGrad NumFreq
+
+# Output
+%output
+  PrintLevel  3
+end
+
+# Basis
+%basis
+  Basis  "aug-cc-pVTZ"
+end
+
+# SCF block
+%scf
+  TolE   1e-12        
+  MaxIter 200         
+  Thresh 1e-18        
+  TCut   1e-20        
+  ConvCheckMode 2     
+end
+
+# Canonical Correlation Block
+%mdci
+  STol    1e-10       
+  Triples 1           
+  MaxIter 100         
+end
+
+%geom
+      MaxIter 100 
+
+      # Convergence 
+      TolE 1.E-10
+      TolRMSG  1.0E-6
+      TolMAXG  3.0E-6
+      TolRMSD  2.0E-5
+      TolMaxD  4.0E-5
+end
+
+
+# Coordinate block (Default: Angstroem)
+* xyz 0 1          # Charge:0  Spin:2S+1
+C   0.000000000  0.000000000  0.000000000
+H   0.000000000  0.000000000  1.089000000
+H   1.026719000  0.000000000 -0.363000000
+H  -0.513360000  0.889165000 -0.363000000
+H  -0.513360000 -0.889165000 -0.363000000
+*
+

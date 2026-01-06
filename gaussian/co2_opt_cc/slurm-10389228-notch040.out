@@ -1,0 +1,302 @@
+SLURM_CONF=/uufs/notchpeak.peaks/sys/var/slurm/etc/slurm.conf
+SLURM_PRIO_PROCESS=0
+SLURM_SUBMIT_DIR=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+SLURM_SUBMIT_HOST=notchpeak1
+SLURM_JOB_NAME=co2_cc_opt
+SLURM_CLUSTER_NAME=notchpeak
+SLURM_JOB_ID=10389228
+SLURM_JOB_NUM_NODES=1
+SLURM_JOB_NODELIST=notch040
+SLURM_JOB_PARTITION=notchpeak
+SLURM_JOB_CPUS_PER_NODE=32
+SLURM_JOBID=10389228
+SLURM_NNODES=1
+SLURM_NODELIST=notch040
+SLURM_TASKS_PER_NODE=32
+SLURM_MEM_PER_CPU=0
+SLURM_JOB_ACCOUNT=chpc
+SLURM_JOB_QOS=notchpeak
+SLURM_TOPOLOGY_ADDR=notch040
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_CPUS_ON_NODE=32
+SLURM_OOM_KILL_STEP=0
+SLURM_JOB_END_TIME=1767920789
+SLURM_JOB_START_TIME=1767661588
+SLURM_TASK_PID=2275693
+SLURM_NODEID=0
+SLURM_PROCID=0
+SLURM_LOCALID=0
+SLURM_GTIDS=0
+SLURM_JOB_UID=321331
+SLURM_JOB_USER=u0253283
+SLURM_JOB_GID=1722
+SLURMD_NODENAME=notch040
+SLURM_SCRIPT_CONTEXT=prolog_task
+Gaussian Job: 10389228
+  Started at: Mon Jan  5 18:06:33 MST 2026
+  Scratch type: VAST
+  Nodes: notch040
+  Work dir: /uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib
+__LMOD_REF_COUNT_PATH=/uufs/chpc.utah.edu/sys/installdir/nbo7-g16/7.0.10/nbo7/bin:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:1;/uufs/chpc.utah.edu/sys/bin:1;/usr/share/Modules/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/uufs/chpc.utah.edu/common/home/u0253283/.dotnet/tools:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:2
+__LMOD_REF_COUNT__LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/gaussian16/AVX2.C01.lua:1
+__LMOD_REF_COUNT_LOADEDMODULES=chpc/1.0:1;gaussian16/AVX2.C01:1
+PWD=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+LOADEDMODULES=chpc/1.0:gaussian16/AVX2.C01
+MANPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/notchpeak.peaks/sys/installdir/slurm/std/share/man:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:/usr/local/share/man:/usr/share/man:/uufs/chpc.utah.edu/sys/man
+PATH=/uufs/chpc.utah.edu/sys/installdir/nbo7-g16/7.0.10/nbo7/bin:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:/uufs/chpc.utah.edu/sys/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u0253283/.dotnet/tools:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin
+_LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/gaussian16/AVX2.C01.lua
+OLDPWD=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np
+SLURM_SUBMIT_DIR=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+WORKDIR=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+GAUSS_ARCHDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/arch
+GAUSS_BSDDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd
+GAUSS_EXEDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16
+GAUSS_LEXEDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/linda-exe
+GV_DIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gv
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib:2
+LMOD_FAMILY_GAUSSIAN=gaussian16
+__LMOD_REF_COUNT_MANPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/share/man:4;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:1;/usr/local/share/man:2;/usr/share/man:2;/uufs/chpc.utah.edu/sys/man:1
+__LMOD_REF_COUNT_PERLLIB=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1
+PERLLIB=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd
+__LMOD_REF_COUNT_PYTHONPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1
+PYTHONPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd
+g16root=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2
+LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+__LMOD_REF_COUNT_PATH=/uufs/chpc.utah.edu/sys/installdir/nbo7-g16/7.0.10/nbo7/bin:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:1;/uufs/chpc.utah.edu/sys/bin:1;/usr/share/Modules/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/uufs/chpc.utah.edu/common/home/u0253283/.dotnet/tools:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:2
+_ModuleTable002_=PSB7CmZuID0gIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29yZS9nYXVzc2lhbjE2L0FWWDIuQzAxLmx1YSIsCmZ1bGxOYW1lID0gImdhdXNzaWFuMTYvQVZYMi5DMDEiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdhdXNzaWFuMTYvQVZYMi5DMDEiLAp3ViA9ICIqYXZ4LjAwMDAwMDAwMi4qYy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKCiIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW0iCiwgIi91dWZzL2NocGMudXRh
+SSH_CONNECTION=10.128.56.110 33546 155.101.26.78 22
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+LANG=en_US.UTF-8
+HISTCONTROL=ignoredups
+MODULERCFILE=/uufs/chpc.utah.edu/sys/modulefiles/etc/rc_r8
+DISPLAY=notchpeak1:15.0
+GUESTFISH_RESTORE=\e[0m
+HOSTNAME=notch040
+LMOD_SYSTEM_DEFAULT_MODULES=chpc
+__LMOD_REF_COUNT__LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/gaussian16/AVX2.C01.lua:1
+__LMOD_SET_FPATH=1
+GUESTFISH_INIT=\e[1;34m
+FPATH=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/ksh_funcs
+KDEDIRS=/usr
+BASHRC_LOADED=0
+_ModuleTable004_=bGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvQ29yZS9saW51eC1yb2NreTgtbmVoYWxlbTovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LXg4Nl82NDovdXNyL3NoYXJlL01vZHVsZXMvbW9kdWxlZmlsZXM6L2V0Yy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvTGludXg6L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlOi91dWZzL2NocGMudXRhaC5lZHUvc3lzL2luc3RhbGxkaXIvbG1vZC84LjYtcjgvbW9kdWxlZmlsZXMvQ29yZSIsCn0K
+DOTNET_ROOT=/usr/lib64/dotnet
+S_COLORS=auto
+which_declare=declare -f
+XDG_SESSION_ID=42125
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+DOTNET_BUNDLE_EXTRACT_BASE_DIR=/uufs/chpc.utah.edu/common/home/u0253283/.cache/dotnet_bundle_extract
+USER=u0253283
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+__LMOD_REF_COUNT_MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:2;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:2;/usr/share/Modules/modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:1;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core:1
+__LMOD_REF_COUNT_LOADEDMODULES=chpc/1.0:1;gaussian16/AVX2.C01:1
+PWD=/scratch/general/vast/u0253283/10389228/notchpeak.peaks
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+HOME=/uufs/chpc.utah.edu/common/home/u0253283
+SSH_CLIENT=10.128.56.110 33546 22
+LMOD_VERSION=8.6
+KRB5CCNAME=KEYRING:persistent:321331
+BASH_ENV=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash
+XDG_DATA_DIRS=/uufs/chpc.utah.edu/common/home/u0253283/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+OSVER=8.10
+LMOD_sys=Linux
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpnYXVzc2lhbiA9ICJnYXVzc2lhbjE2IiwKfSwKbVQgPSB7CmNocGMgPSB7CmZuID0gIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29yZS9jaHBjLzEuMC5sdWEiLApmdWxsTmFtZSA9ICJjaHBjLzEuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImNocGMiLAp3ViA9ICIwMDAwMDAwMDEuKnpmaW5hbCIsCn0sCmdhdXNzaWFuMTYg
+LOADEDMODULES=chpc/1.0:gaussian16/AVX2.C01
+CPUARCH=skylake_avx512
+_ModuleTable003_=aC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvQ29yZS9saW51eC1yb2NreTgteDg2XzY0IgosICIvdXNyL3NoYXJlL01vZHVsZXMvbW9kdWxlZmlsZXMiLCAiL2V0Yy9tb2R1bGVmaWxlcyIsICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzIgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0xpbnV4IgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0NvcmUiLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvaW5zdGFsbGRpci9sbW9kLzguNi1yOC9tb2R1bGVmaWxlcy9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZp
+LMOD_ROOT=/uufs/chpc.utah.edu/sys/installdir/lmod
+SSH_TTY=/dev/pts/100
+UUFSCELL=notchpeak.peaks
+MAIL=/var/spool/mail/u0253283
+__Init_Default_Modules=1
+TERM=xterm-256color
+SHELL=/bin/bash
+_ModuleTable_Sz_=4
+OSREL=Rocky
+TMOUT=0
+SHLVL=2
+LMOD_SHORTTIME=86400
+MANPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/notchpeak.peaks/sys/installdir/slurm/std/share/man:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:/usr/local/share/man:/usr/share/man:/uufs/chpc.utah.edu/sys/man
+GDK_BACKEND=x11
+MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core
+LOGNAME=u0253283
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-AmkfF8TVeO,guid=1e85c6d93d2b378c2ca244ae695beec0
+XDG_RUNTIME_DIR=/run/user/321331
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH_ROOT=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8
+PATH=/uufs/chpc.utah.edu/sys/installdir/nbo7-g16/7.0.10/nbo7/bin:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:/uufs/chpc.utah.edu/sys/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u0253283/.dotnet/tools:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin
+_LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/gaussian16/AVX2.C01.lua
+GUESTFISH_OUTPUT=\e[0m
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+MODULESHOME=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8
+LMOD_SETTARG_FULL_SUPPORT=no
+HISTSIZE=1000
+LMOD_PKG=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8
+VGL_DISPLAY=egl0
+LMOD_CMD=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/libexec/lmod
+CVS_RSH=ssh
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LMOD_DIR=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/libexec
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC_ml%%=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+_=/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin/sbatch
+OLDPWD=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np
+SLURM_CONF=/uufs/notchpeak.peaks/sys/var/slurm/etc/slurm.conf
+SLURM_PRIO_PROCESS=0
+SLURM_SUBMIT_DIR=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+SLURM_SUBMIT_HOST=notchpeak1
+OMPI_MCA_plm_slurm_args=--external-launcher
+PRTE_MCA_plm_slurm_args=--external-launcher
+HYDRA_BOOTSTRAP=slurm
+HYDRA_LAUNCHER_EXTRA_ARGS=--external-launcher
+I_MPI_HYDRA_BOOTSTRAP=slurm
+I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+SLURM_JOB_NAME=co2_cc_opt
+SLURM_CLUSTER_NAME=notchpeak
+SLURM_JOB_ID=10389228
+SLURM_JOB_NUM_NODES=1
+SLURM_JOB_NODELIST=notch040
+SLURM_JOB_PARTITION=notchpeak
+SLURM_JOB_CPUS_PER_NODE=32
+ENVIRONMENT=BATCH
+SLURM_JOBID=10389228
+SLURM_NNODES=1
+SLURM_NODELIST=notch040
+SLURM_TASKS_PER_NODE=32
+SLURM_MEM_PER_CPU=0
+SLURM_JOB_ACCOUNT=chpc
+SLURM_JOB_QOS=notchpeak
+SLURM_TOPOLOGY_ADDR=notch040
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_CPUS_ON_NODE=32
+SLURM_OOM_KILL_STEP=0
+SLURM_JOB_END_TIME=1767920789
+SLURM_JOB_START_TIME=1767661588
+SLURM_TASK_PID=2275693
+SLURM_NODEID=0
+SLURM_PROCID=0
+SLURM_LOCALID=0
+SLURM_GTIDS=0
+SLURM_JOB_UID=321331
+SLURM_JOB_USER=u0253283
+SLURM_JOB_GID=1722
+SLURMD_NODENAME=notch040
+SLURM_SCRIPT_CONTEXT=prolog_task
+TMPDIR=/scratch/local/u0253283/10389228
+HOSTTYPE=x86_64-linux
+VENDOR=unknown
+OSTYPE=linux
+MACHTYPE=x86_64
+GROUP=chpc
+HOST=notch040
+MODULES_USE_COMPAT_VERSION=0
+CUDA_DEVICE_ORDER=PCI_BUS_ID
+TARG_TITLE_BAR_PAREN= 
+LMOD_SETTARG_CMD=:
+WORKDIR=/uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/gaussian/np/co2_opt_ccsdt
+FILENAME=co2_ccsdt_opt
+SCRFLAG=VAST
+NODES=1
+GAUSS_ARCHDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/arch
+GAUSS_BSDDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd
+GAUSS_EXEDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16
+GAUSS_LEXEDIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/linda-exe
+GV_DIR=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gv
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib:2
+LMOD_FAMILY_GAUSSIAN=gaussian16
+LMOD_FAMILY_GAUSSIAN_VERSION=AVX2.C01
+__LMOD_REF_COUNT_MANPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/share/man:4;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:1;/usr/local/share/man:2;/usr/share/man:2;/uufs/chpc.utah.edu/sys/man:1
+__LMOD_REF_COUNT_PERLLIB=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1
+PERLLIB=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd
+__LMOD_REF_COUNT_PYTHONPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:1;/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd:1
+PYTHONPATH=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/gauopen:/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2/g16/bsd
+USE_MESAGL=
+_DSM_BARRIER=SHM
+g16root=/uufs/chpc.utah.edu/sys/installdir/gaussian16/C01/AVX2
+MP_NEWJOB=yes
+LINDA_CLC=network
+LINDA_FLC=network
+GAUSS_SCRDIR=/scratch/general/vast/u0253283/10389228/notchpeak.peaks

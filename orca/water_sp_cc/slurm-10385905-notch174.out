@@ -1,0 +1,12 @@
+Electronic structure calculation
+  Started at  : 01/05/2026 @ 12:54:38
+  Job. Id     : 10385905
+  Cluster     : notchpeak
+  #Nodes      : 1
+  Nodes       : notch174
+  Executable  : /uufs/chpc.utah.edu/sys/installdir/r8/orca/6.0.1/orca
+  Working dir.: /uufs/chpc.utah.edu/common/home/u0253283/TestBench/Chem/orca/water_sp_ccsdt
+  Input file  : water.inp
+  #ORCA procs : 64
+
+  Ended at    : 01/05/2026 @ 23:08:05
