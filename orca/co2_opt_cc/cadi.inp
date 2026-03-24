@@ -1,0 +1,68 @@
+# CO2: CCSD(T) geometry optimization + freq calc at CCSD(T) level
+#      Basis: aug-cc-pVQZ
+
+# Set the base name for the output file
+%base "CO2_OPT_CC"
+
+%pal
+    nprocs 16
+end
+
+# Keyword line
+! CCSD(T) Opt NumGrad NumFreq
+
+# Output
+%output
+  PrintLevel  3
+end
+
+# Basis
+%basis
+  Basis  "aug-cc-pVTZ"
+end
+
+# SCF Block
+%scf
+  MaxIter 200
+  TolE   1.0e-12      # SCF energy change threshold
+  Thresh 1.0e-18      # integral prescreening threshold
+  TCut   1.0e-20      # primitive integral prescreening cutoff
+  ConvCheckMode 2     # default-style convergence check (energy-based)
+end
+
+# Canonical correlation Block
+%mdci
+  MaxIter 100         # Max. CC Iterations
+  STol    1.0e-10     # tighten CC residual convergence (stricter than default)
+  Triples 1           # Request the (T) correction
+end
+
+%coords
+  CTyp internal
+  Charge 0
+  Mult 1
+  # Define your variables here
+  pardef 
+    R1 = 1.16; 
+  end
+  # Z-matrix: AtomN NA NB NC  {Bond} {Angle} {Dihedral}
+  coords
+    O  0  0  0    0.0    0.0    0.0
+    C  1  0  0    {R1}   0.0    0.0
+    O  2  1  0    {R1}   180.0  0.0
+  end
+end
+
+%geom
+      MaxIter 100
+
+      # Convergence 
+      TolE 1.E-10
+      TolRMSG  1.0E-6
+      TolMAXG  3.0E-6
+      TolRMSD  2.0E-5
+      TolMaxD  4.0E-5
+end
+
+
+
