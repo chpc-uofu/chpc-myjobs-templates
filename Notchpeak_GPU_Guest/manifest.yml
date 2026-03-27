@@ -1,0 +1,6 @@
+name: Notchpeak GPU job acting as a guest on owner GPU nodes
+notes: Does not require an allocation. Resource requests for 1 node, 6 tasks, and 40 GB of CPU memory. GPU allocation using --gres=gpu:rtx6000:1. Email notifications for all job events. Environment setup for deep learning.GPU detection and validation using nvidia-smi. Execution of a Python script (mycode.py) from a specified working directory. Logging of job metadata and runtime environment.
+script: notchpeak_guest_gpu_job.sh
+host: notchpeak
+
+

@@ -1,0 +1,6 @@
+name: Notchpeak GPU job on CHPC-owned GPU nodes targeting 8 NVIDIA 3090 GPUs on a single node
+notes: The job is configured to use 8 NVIDIA 3090 GPUs on a single node (using all its memory), assigning one GPU to each of the 8 MPI tasks.
+script: notchpeak_gpu_3090_job.sh
+host: notchpeak
+
+
