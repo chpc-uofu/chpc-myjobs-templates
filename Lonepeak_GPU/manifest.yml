@@ -1,0 +1,6 @@
+name: Notchpeak job on CHPC-owned GPU nodes
+notes: Does not require an allocation
+script: notchpeak_gpu_job.sh
+host: notchpeak
+
+
